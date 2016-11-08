@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Braubuch</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="css/spectre.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+<div class="container grid-960">
+    <section id="navbar">
+        <h1>Braubuch</h1>
+        <ul class="tab ">
+            <li class="tab-item">
+                <a href="#">Brau-Log</a>
+            </li>
+            <li class="tab-item">
+                <a href="#">Rezepte</a>
+            </li>
+            <li class="tab-item">
+                <a href="#">Archiv</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="content">
+        <div class="columns">
+            <div class="column col-6">
+                <h3>Rezept</h3>
+                <h5>Maische</h5>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h5>Hopfen</h5>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h5>Hefe</h5>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner Malz</td>
+                        <td>10 Kg</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3>Anmerkungen</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="column col-6">
+                <h3>Log</h3>
+                <table class="table">
+                    <tbody>
+                    <tr><td>something happened</td></tr>
+                    <tr><td>something happened</td></tr>
+                    <tr><td>something happened</td></tr>
+                    <tr><td>2016-10-24T23:59:12</td><td>something happened</td><td>70°C</td><td>5mins</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-sm"><i class="fa fa-pause" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-sm"><i class="fa fa-forward" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                    </tbody>
+                </table>
+                <h5>Eintrag</h5>
+                    <textarea class="form-input"></textarea>
+                    <button class="btn btn-primary btn-block">Ok</button>
+
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/lib/firebase-3.6.0.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyADH6f-lVuXUz0jAXriecltWhIsuh_jZfU",
+        authDomain: "braubuch-1.firebaseapp.com",
+        databaseURL: "https://braubuch-1.firebaseio.com",
+        storageBucket: "braubuch-1.appspot.com",
+        messagingSenderId: "802253749052"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="js/lib/jquery-3.1.1.min.js"></script>
+<script src="js/braubuch.js"></script>
+</body>
+</html>

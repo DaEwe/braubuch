@@ -1,0 +1,594 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class=" is-copy-enabled is-u2f-enabled">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-b58c080c9d900217a5669b54b61c1609c56789944a064e7a027acd88c75c761e.css" integrity="sha256-tYwIDJ2QAhelZptUthwWCcVniZRKBk56AnrNiMdcdh4=" media="all" rel="stylesheet" />
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-13a1b7fab391cd9d7b3827c45eaae67afad4a2a035c59942b0d40f8e75c0e69b.css" integrity="sha256-E6G3+rORzZ17OCfEXqrmevrUoqA1xZlCsNQPjnXA5ps=" media="all" rel="stylesheet" />
+    
+    
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/site-9e04af73ed9cabf1eb577117611306e88644e59ee7b7b4494d008406599cc7a8.css" integrity="sha256-ngSvc+2cq/HrV3EXYRMG6IZE5Z7nt7RJTQCEBlmcx6g=" media="all" rel="stylesheet" />
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>spectre/spectre.min.css at master · picturepan2/spectre · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars2.githubusercontent.com/u/126385?v=3&amp;s=400" name="twitter:image:src" /><meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="picturepan2/spectre" name="twitter:title" /><meta content="spectre - Spectre.css - a lightweight, responsive and modern CSS framework." name="twitter:description" />
+      <meta content="https://avatars2.githubusercontent.com/u/126385?v=3&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="picturepan2/spectre" property="og:title" /><meta content="https://github.com/picturepan2/spectre" property="og:url" /><meta content="spectre - Spectre.css - a lightweight, responsive and modern CSS framework." property="og:description" />
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    
+    <meta name="pjax-timeout" content="1000">
+    
+    <meta name="request-id" content="5843634D:14AEE:74ECDA3:5822369E" data-pjax-transient>
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="5843634D:14AEE:74ECDA3:5822369E" name="octolytics-dimension-request_id" />
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="OWM2MjQxMTI1NzViOTcxNGIyZDE4N2JmYTNiZWQ1MzRjOTgzYWMwZWRlYmVkN2NlYzM1YjRlOGFhZjMzMTA5Y3x7InJlbW90ZV9hZGRyZXNzIjoiODguNjcuOTkuNzciLCJyZXF1ZXN0X2lkIjoiNTg0MzYzNEQ6MTRBRUU6NzRFQ0RBMzo1ODIyMzY5RSIsInRpbWVzdGFtcCI6MTQ3ODYzNzIyMCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta name="html-safe-nonce" content="30c0e88612bef45e3aef72b6d69632b4ddf61752">
+    <meta content="b2949f21ba5167286cf98318e8cf2c80e1e4b8fb" name="form-nonce" />
+
+    <meta http-equiv="x-pjax-version" content="439fe676687bceadb3356ba20a64c3bd">
+    
+
+      
+  <meta name="description" content="spectre - Spectre.css - a lightweight, responsive and modern CSS framework.">
+  <meta name="go-import" content="github.com/picturepan2/spectre git https://github.com/picturepan2/spectre.git">
+
+  <meta content="126385" name="octolytics-dimension-user_id" /><meta content="picturepan2" name="octolytics-dimension-user_login" /><meta content="53321815" name="octolytics-dimension-repository_id" /><meta content="picturepan2/spectre" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="53321815" name="octolytics-dimension-repository_network_root_id" /><meta content="picturepan2/spectre" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/picturepan2/spectre/commits/master.atom" rel="alternate" title="Recent Commits to spectre:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="https://github.com/picturepan2/spectre/blob/master/dist/spectre.min.css" data-pjax-transient>
+  </head>
+
+
+  <body class="logged-out  env-production linux vis-public page-blob">
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+    <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+          <header class="site-header js-details-container" role="banner">
+  <div class="container-responsive">
+    <a class="header-logo-invertocat" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
+
+    <button class="btn-link float-right site-header-toggle js-details-target" type="button" aria-label="Toggle navigation">
+      <svg aria-hidden="true" class="octicon octicon-three-bars" height="24" version="1.1" viewBox="0 0 12 16" width="18"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+    </button>
+
+    <div class="site-header-menu">
+      <nav class="site-header-nav site-header-nav-main">
+        <a href="/personal" class="js-selected-navigation-item nav-item nav-item-personal" data-ga-click="Header, click, Nav menu - item:personal" data-selected-links="/personal /personal">
+          Personal
+</a>        <a href="/open-source" class="js-selected-navigation-item nav-item nav-item-opensource" data-ga-click="Header, click, Nav menu - item:opensource" data-selected-links="/open-source /open-source">
+          Open source
+</a>        <a href="/business" class="js-selected-navigation-item nav-item nav-item-business" data-ga-click="Header, click, Nav menu - item:business" data-selected-links="/business /business/partners /business/features /business/customers /business">
+          Business
+</a>        <a href="/explore" class="js-selected-navigation-item nav-item nav-item-explore" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship /showcases /explore">
+          Explore
+</a>      </nav>
+
+      <div class="site-header-actions">
+            <a class="btn btn-primary site-header-actions-btn" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">Sign up</a>
+          <a class="btn site-header-actions-btn mr-1" href="/login?return_to=%2Fpicturepan2%2Fspectre%2Fblob%2Fmaster%2Fdist%2Fspectre.min.css" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">Sign in</a>
+      </div>
+
+        <nav class="site-header-nav site-header-nav-secondary mr-md-3">
+          <a class="nav-item" href="/pricing">Pricing</a>
+          <a class="nav-item" href="/blog">Blog</a>
+          <a class="nav-item" href="https://help.github.com">Support</a>
+          <a class="nav-item header-search-link" href="https://github.com/search">Search GitHub</a>
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/picturepan2/spectre/search" class="js-site-search-form" data-scoped-search-url="/picturepan2/spectre/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <label class="form-control header-search-wrapper js-chromeless-input-container">
+      <div class="header-search-scope">This repository</div>
+      <input type="text"
+        class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s"
+        name="q"
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off">
+    </label>
+</form></div>
+
+        </nav>
+    </div>
+  </div>
+</header>
+
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" data-pjax-container>
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+      <a href="/login?return_to=%2Fpicturepan2%2Fspectre"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-eye" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/picturepan2/spectre/watchers"
+     aria-label="124 users are watching this repository">
+    124
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fpicturepan2%2Fspectre"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg aria-hidden="true" class="octicon octicon-star" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/picturepan2/spectre/stargazers"
+      aria-label="3092 users starred this repository">
+      3,092
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fpicturepan2%2Fspectre"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/picturepan2/spectre/network" class="social-count"
+       aria-label="201 users are forked this repository">
+      201
+    </a>
+  </li>
+</ul>
+
+    <h1 class="public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a href="/picturepan2" class="url fn" rel="author">picturepan2</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="/picturepan2/spectre" data-pjax="#js-repo-pjax-container">spectre</a></strong>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/picturepan2/spectre" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /picturepan2/spectre" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a href="/picturepan2/spectre/issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /picturepan2/spectre/issues" itemprop="url">
+        <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="counter">19</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a href="/picturepan2/spectre/pulls" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /picturepan2/spectre/pulls" itemprop="url">
+      <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="counter">3</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+  <a href="/picturepan2/spectre/projects" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /picturepan2/spectre/projects">
+    <svg aria-hidden="true" class="octicon octicon-project" height="16" version="1.1" viewBox="0 0 15 16" width="15"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+    Projects
+    <span class="counter">0</span>
+</a>
+
+
+  <a href="/picturepan2/spectre/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /picturepan2/spectre/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0v2h3.6l.9-1.8.9 5.4L9 8.5l1.6 1.5H14V8z"/></svg>
+    Pulse
+</a>
+  <a href="/picturepan2/spectre/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /picturepan2/spectre/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+
+<a href="/picturepan2/spectre/blob/87e530f060d57b3802490ba126459ae8b085523a/dist/spectre.min.css" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+<!-- blob contrib key: blob_contributors:v21:adce48e223a5c3a765c5e4173f0429a3 -->
+
+<div class="file-navigation js-zeroclipboard-container">
+  
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/picturepan2/spectre/blob/gh-pages/dist/spectre.min.css"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/picturepan2/spectre/blob/less/dist/spectre.min.css"
+               data-name="less"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                less
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/picturepan2/spectre/blob/master/dist/spectre.min.css"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/picturepan2/spectre/tree/v0.1.26/dist/spectre.min.css"
+              data-name="v0.1.26"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.26">
+                v0.1.26
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/picturepan2/spectre/tree/v0.1.23/dist/spectre.min.css"
+              data-name="v0.1.23"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.23">
+                v0.1.23
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/picturepan2/spectre/tree/v0.1.22/dist/spectre.min.css"
+              data-name="v0.1.22"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.22">
+                v0.1.22
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/picturepan2/spectre/tree/v0.1.20/dist/spectre.min.css"
+              data-name="v0.1.20"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.20">
+                v0.1.20
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/picturepan2/spectre/tree/v0.1.19/dist/spectre.min.css"
+              data-name="v0.1.19"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.19">
+                v0.1.19
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="BtnGroup float-right">
+    <a href="/picturepan2/spectre/find/master"
+          class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+          data-pjax
+          data-hotkey="t">
+      Find file
+    </a>
+    <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
+  </div>
+  <div class="breadcrumb js-zeroclipboard-target">
+    <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/picturepan2/spectre"><span>spectre</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/picturepan2/spectre/tree/master/dist"><span>dist</span></a></span><span class="separator">/</span><strong class="final-path">spectre.min.css</strong>
+  </div>
+</div>
+
+
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/picturepan2/spectre/commit/ba375ed5bdd8e98ed5a335117a17b30afd51172c" data-pjax>
+          ba375ed
+        </a>
+        <relative-time datetime="2016-10-07T16:55:04Z">Oct 7, 2016</relative-time>
+      </span>
+      <div>
+        <img alt="@picturepan2" class="avatar" height="20" src="https://avatars1.githubusercontent.com/u/126385?v=3&amp;s=40" width="20" />
+        <a href="/picturepan2" class="user-mention" rel="author">picturepan2</a>
+          <a href="/picturepan2/spectre/commit/ba375ed5bdd8e98ed5a335117a17b30afd51172c" class="message" data-pjax="true" title="Update button groups and tabs style">Update button groups and tabs style</a>
+      </div>
+
+    <div class="commit-tease-contributors">
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
+    </div>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@picturepan2" height="24" src="https://avatars3.githubusercontent.com/u/126385?v=3&amp;s=48" width="24" />
+            <a href="/picturepan2">picturepan2</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+<div class="file">
+  <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a href="/picturepan2/spectre/raw/master/dist/spectre.min.css" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/picturepan2/spectre/blame/master/dist/spectre.min.css" class="btn btn-sm js-update-url-with-hash BtnGroup-item">Blame</a>
+      <a href="/picturepan2/spectre/commits/master/dist/spectre.min.css" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+    </div>
+
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    29.8 KB
+  </div>
+</div>
+
+  
+
+  <div itemprop="text" class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html,legend{box-sizing:border-box}pre,textarea{overflow:auto}blockquote p:last-child,pre code{margin-bottom:0}.btn,.menu .menu-item{-webkit-user-select:none}.btn-group .btn.active,.btn-group .btn:active,.btn-group .btn:focus,.btn-group .btn:hover,.input-group .form-input:focus,.input-group .input-group-addon:focus,.input-group .input-group-btn:focus{z-index:99}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects;color:#5764c6;text-decoration:underline}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline dotted;text-decoration:underline}.breadcrumb .breadcrumb-item a,.btn,.chip-sm,.menu .menu-item,.menu .menu-item a,.tab .tab-item a{text-decoration:none}b,strong{font-weight:bolder}dfn{font-style:italic}h1{margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}.btn,.chip .chip-content,.chip-sm .chip-name,.label,code{white-space:nowrap}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*,::after,::before{box-sizing:inherit}html{font-size:10px;line-height:1.42857143;-webkit-tap-highlight-color:transparent}body{margin:0;background:#fff;color:#333;font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Ubuntu,&quot;PingFang SC&quot;,&quot;Hiragino Sans GB&quot;,&quot;Microsoft YaHei&quot;,&quot;Hiragino Kaku Gothic Pro&quot;,Meiryo,&quot;Malgun Gothic&quot;,&quot;Helvetica Neue&quot;,sans-serif;font-size:1.4rem;overflow-x:hidden}a:focus,a:hover{color:#283176}.disabled,[disabled]{cursor:default;opacity:.75;pointer-events:none}.btn,.form-switch,.hand{cursor:pointer}.btn .icon,.menu .icon,.toast .icon{font-size:1.3333em;line-height:.8em;margin-right:.2rem;vertical-align:-20%}pre,pre code{line-height:1.8rem}h1,h2,h3,h4,h5,h6{color:inherit;font-weight:300;line-height:1.1;margin-bottom:1.5rem;margin-top:2.5rem}h1{font-size:5rem}h2{font-size:4rem}h3{font-size:3rem}h4{font-size:2.4rem}h5{font-size:2rem}h6{font-size:1.6rem}p{margin:0 0 1rem}blockquote{border-left:.2rem solid #ddd;margin-left:0;padding:1rem 2rem}blockquote cite{color:#b3b3b3}ol,ul{margin:2rem 0 2rem 2rem;padding:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 2rem}ol li,ul li{margin-top:1rem}ul{list-style:disc inside}ul ul{list-style-type:circle}ol{list-style:decimal inside}ol ol{list-style-type:lower-alpha}dl dt{font-weight:700}dl dd{margin:.5rem 0 1.5rem}.lead{font-size:120%}.highlight,code,mark{border-radius:.2rem;display:inline;font-size:1em;padding:.1em .3em;vertical-align:baseline}.highlight,mark{background:#ffe5a3}pre{background:#f9f9f9;border-left:.2rem solid #e2e2e2;margin-bottom:1em;margin-top:1em;padding:1.5rem 2.5rem}code{background:#efefef}.btn,.form-select{vertical-align:middle}pre code{background:0 0;border-left:0;margin-top:0}.btn,.form-input{line-height:1.6rem;-webkit-appearance:none;outline:0}.table{border-collapse:collapse;border-spacing:0;width:100%}.table.table-striped tbody tr:nth-of-type(odd){background:#fcfcfc}.table.table-hover tbody tr:hover{background:#f4f4f4}.table.table-hover tbody tr.selected{background:#f2f2f2}.table td,.table th{border-bottom:.1rem solid #efefef;padding:1.5rem 1rem;text-align:left}.btn,.empty{text-align:center}.table th{border-color:#c9c9c9}.btn{background:#fff;border:.1rem solid #5764c6;border-radius:.3rem;color:#5764c6;display:inline-block;font-size:1.4rem;height:3.2rem;padding:.7rem 1.5rem;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn:focus{background:#f3f4fb}.btn:hover{background:#5764c6;border-color:#4452c0;color:#fff}.btn.active,.btn:active{background:#4452c0;border-color:#3b49af;color:#fff}.btn.btn-primary{background:#5764c6;border-color:#4452c0;color:#fff}.btn.btn-primary:focus{background:#4856c1;border-color:#3b49af;color:#fff}.btn.btn-primary:hover{background:#404fbe;border-color:#35419c;color:#fff}.btn.btn-primary.active,.btn.btn-primary:active{background:#3e4cb6;border-color:#35419c;color:#fff}.btn.btn-primary.loading::after{border-color:transparent transparent #fff #fff}.btn.btn-link{background:0 0;border-color:transparent;color:#5764c6}.btn.btn-link:focus,.btn.btn-link:hover{background:#f4f4f4;color:#35419c}.btn.btn-link.active,.btn.btn-link:active{background:#efefef;color:#283176}.btn.btn-sm{border-radius:.2rem;font-size:1.2rem;height:2.4rem;line-height:1.4rem;padding:.4rem 1rem}.btn.btn-lg{border-radius:.4rem;font-size:1.8rem;height:4.2rem;line-height:2rem;padding:1rem 1.8rem}.btn.btn-block{display:block;width:100%}.btn.btn-clear{background:0 0;border:0;color:#666;height:2rem;margin-left:.3rem;opacity:.45;padding:0}.btn.btn-clear:hover{opacity:.85}.btn.btn-clear::before{content:&quot;\00d7&quot;;font-size:2rem}.btn-group{display:inline-flex;display:-ms-inline-flexbox;display:-webkit-inline-flex;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;max-width:100%;overflow-x:auto}.btn-group .btn{-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.btn-group .btn:first-child:not(:last-child){border-bottom-right-radius:0;border-top-right-radius:0}.btn-group .btn:not(:first-child):not(:last-child){border-radius:0;margin-left:-.1rem}.btn-group .btn:last-child:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0;margin-left:-.1rem}.btn-group.btn-group-block{display:flex;display:-ms-flexbox;display:-webkit-flex}.form-group:not(:last-child){margin-bottom:1rem}.form-input{background:#fff;border:.1rem solid #c5c5c5;border-radius:.3rem;color:#333;display:block;font-size:1.4rem;height:3.2rem;max-width:100%;padding:.7rem .8rem;position:relative;width:100%}.form-input:focus{border-color:#5764c6}.form-input[disabled]{background:#eeeff2}.form-input.input-sm{border-radius:.2rem;font-size:1.2rem;height:2.4rem;padding:.3rem .6rem}.form-input.input-lg{border-radius:.4rem;font-size:1.6rem;height:4.2rem;line-height:2rem;padding:1rem .8rem}.form-input.input-inline{display:inline-block;vertical-align:middle;width:auto}textarea.form-input{height:auto;line-height:2rem}.form-input.is-success,.has-success .form-input{border-color:#32b643}.form-input.is-danger,.has-danger .form-input{border-color:#e85600}.form-input-hint{color:#888;display:inline-block;margin-top:.4rem}.has-success .form-input-hint,.is-success+.form-input-hint{color:#32b643}.has-danger .form-input-hint,.is-danger+.form-input-hint{color:#e85600}.form-label{display:block;line-height:1.6rem;margin-bottom:.5rem}.form-select{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:.1rem solid #c5c5c5;border-radius:.3rem;font-size:1.4rem;line-height:1.6rem;outline:0;padding:.5rem .8rem}.form-select:not([multiple]){background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAMAAACzvE1FAAAADFBMVEUzMzMzMzMzMzMzMzMKAG/3AAAAA3RSTlMAf4C/aSLHAAAAPElEQVR42q3NMQ4AIAgEQTn//2cLdRKppSGzBYwzVXvznNWs8C58CiussPJj8h6NwgorrKRdTvuV9v16Afn0AYFOB7aYAAAAAElFTkSuQmCC) right .75rem center/.8rem 1rem no-repeat #fff;height:3.2rem;padding-right:2.4rem}.form-select:focus{border-color:#5764c6}.form-select::-ms-expand{display:none}.form-select.select-sm{border-radius:.2rem;font-size:1.2rem;height:2.4rem;padding:.4rem 2rem .4rem .6rem}.form-select.select-lg{font-size:1.6rem;height:4.2rem;line-height:2rem;padding:1rem 2.4rem 1rem .8rem}.form-checkbox input,.form-radio input,.form-switch input{clip:rect(0,0,0,0);height:.1rem;margin:-.1rem;overflow:hidden;position:absolute;width:.1rem}.form-checkbox,.form-radio{cursor:pointer;display:inline-block;line-height:1.8rem;padding:.3rem 2rem;position:relative}.form-checkbox .form-icon,.form-radio .form-icon{border:.1rem solid #c5c5c5;display:inline-block;font-size:1.4rem;height:1.4rem;left:0;line-height:2.4rem;outline:0;padding:0;position:absolute;top:.5rem;transition:all .15s ease;vertical-align:top;width:1.4rem}.form-checkbox input:checked+.form-icon::after,.form-checkbox input:indeterminate+.form-icon::after,.form-radio input:checked+.form-icon::after{left:50%;position:absolute;top:50%;content:&quot;&quot;}.form-checkbox:hover .form-icon,.form-radio:hover .form-icon{border-color:#929292}.form-checkbox input:focus+.form-icon,.form-radio input:focus+.form-icon{border-color:#5764c6}.form-checkbox input:checked+.form-icon,.form-radio input:checked+.form-icon{background:#5764c6;border-color:#5764c6}.form-checkbox input:active+.form-icon,.form-radio input:active+.form-icon{background:#efefef}.form-checkbox .form-icon{border-radius:.2rem}.form-checkbox input:checked+.form-icon::after{background-clip:padding-box;border:.2rem solid #fff;border-left-width:0;border-top-width:0;height:1rem;margin-left:-.3rem;margin-top:-.6rem;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);width:.6rem}.form-checkbox input:indeterminate+.form-icon{background:#5764c6;border-color:#5764c6}.form-checkbox input:indeterminate+.form-icon::after{background:#fff;height:.2rem;margin-left:-.4rem;margin-top:-.1rem;width:.8rem}.form-radio .form-icon{border-radius:.7rem}.form-radio input:checked+.form-icon::after{background:#fff;border-radius:.2rem;height:.4rem;margin-left:-.2rem;margin-top:-.2rem;width:.4rem}.form-switch{display:inline-block;line-height:2rem;padding:.3rem 2rem .3rem 3.6rem;position:relative}.form-switch .form-icon{background:#c5c5c5;background-clip:padding-box;border:.1rem solid #c5c5c5;border-radius:.9rem;display:inline-block;height:1.8rem;left:0;line-height:2.6rem;outline:0;padding:0;position:absolute;top:.4rem;vertical-align:top;width:3rem}.form-switch .form-icon::after{background:#fff;border-radius:.8rem;content:&quot;&quot;;display:block;height:1.6rem;left:0;position:absolute;top:0;transition:left .15s ease;width:1.6rem}.form-switch input:checked+.form-icon{background:#5764c6;border-color:#5764c6}.form-switch input:checked+.form-icon::after{left:1.2rem}.form-switch input:active+.form-icon::after{background:#efefef}.input-group{display:flex;display:-ms-flexbox;display:-webkit-flex}.input-group .input-group-addon{background:#f9f9f9;border:.1rem solid #c5c5c5;border-radius:.3rem;line-height:1.6rem;padding:.7rem .8rem}.input-group .input-group-addon.addon-sm{font-size:1.2rem;padding:.3rem .6rem}.input-group .input-group-addon.addon-lg{font-size:1.6rem;line-height:2rem;padding:1rem .8rem}.input-group .input-group-addon,.input-group .input-group-btn{-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}.input-group .form-input:first-child:not(:last-child),.input-group .input-group-addon:first-child:not(:last-child),.input-group .input-group-btn:first-child:not(:last-child){border-bottom-right-radius:0;border-top-right-radius:0}.input-group .form-input:not(:first-child):not(:last-child),.input-group .input-group-addon:not(:first-child):not(:last-child),.input-group .input-group-btn:not(:first-child):not(:last-child){border-radius:0;margin-left:-.1rem}.input-group .form-input:last-child:not(:first-child),.input-group .input-group-addon:last-child:not(:first-child),.input-group .input-group-btn:last-child:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0;margin-left:-.1rem}.label{background:#efefef;border-radius:.2rem;color:#666;display:inline;font-size:1em;padding:.1em .3em;vertical-align:baseline}.avatar,.chip-sm{vertical-align:middle}.label.label-primary{background:#5764c6;border-color:#4f5dc3;color:#fff}.label.label-primary a{color:#fff}.label.label-primary a:active,.label.label-primary a:focus,.label.label-primary a:hover{opacity:.75}.img-responsive{display:block;height:auto;max-width:100%}.video-responsive{height:0;overflow:hidden;padding-bottom:56.25%;padding-top:3rem;position:relative}.video-responsive embed,.video-responsive iframe,.video-responsive object{height:100%;left:0;position:absolute;top:0;width:100%}.video-responsive video{height:auto;max-width:100%;width:100%}.video-responsive-4-3{padding-bottom:75%}.container{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;width:100%}@media screen and (min-width:980px){.grid-960{width:98rem}}@media screen and (min-width:500px){.grid-480{width:50rem}}.columns{display:flex;display:-ms-flexbox;display:-webkit-flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-1rem;margin-right:-1rem}.columns.col-gapless{margin-left:0;margin-right:0}.columns.col-gapless .column{padding-left:0;padding-right:0}.column,.form-horizontal{padding:1rem}.columns.col-oneline{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;overflow-x:auto}.chip .chip-content,.chip-sm .chip-name,.tooltip::after{overflow:hidden;text-overflow:ellipsis}.column{-webkit-flex:1;-ms-flex:1;flex:1}.column.col-1,.column.col-10,.column.col-11,.column.col-12,.column.col-2,.column.col-3,.column.col-4,.column.col-5,.column.col-6,.column.col-7,.column.col-8,.column.col-9{-webkit-flex:none;-ms-flex:none;flex:none}.col-12{width:100%}.col-11{width:91.66666667%}.col-10{width:83.33333333%}.col-9{width:75%}.col-8{width:66.66666667%}.col-7{width:58.33333333%}.col-6{width:50%}.col-5{width:41.66666667%}.col-4{width:33.33333333%}.col-3{width:25%}.col-2{width:16.66666667%}.col-1{width:8.33333333%}@media screen and (max-width:960px){.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9{-webkit-flex:none;-ms-flex:none;flex:none}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}}@media screen and (max-width:840px){.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9{-webkit-flex:none;-ms-flex:none;flex:none}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}}@media screen and (max-width:600px){.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9{-webkit-flex:none;-ms-flex:none;flex:none}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}}.form-horizontal .form-group{display:flex;display:-ms-flexbox;display:-webkit-flex}.form-horizontal .form-label{margin-bottom:0;padding:.8rem .4rem}.form-horizontal .form-checkbox,.form-horizontal .form-radio{margin:.5rem 0}@media screen and (max-width:480px){.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{-webkit-flex:none;-ms-flex:none;flex:none}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.hide-xs{display:none!important}}@media screen and (max-width:600px){.hide-sm{display:none!important}}@media screen and (max-width:840px){.hide-md{display:none!important}}@media screen and (max-width:960px){.hide-lg{display:none!important}}@media screen and (max-width:1280px){.hide-xl{display:none!important}}.empty{background:#f8f8f8;border-radius:.3rem;padding:4rem}.avatar,.avatar img{border-radius:50%;position:relative}.empty .empty-title{font-size:1.8rem;margin:1.5rem 0 .5rem}.empty .empty-meta{color:#888}.empty .empty-action{margin-top:1.5rem}.avatar{display:inline-block;font-size:1.4rem;font-weight:300;height:3.2rem;line-height:1;margin:0;width:3.2rem}.avatar.avatar-xs{font-size:.8rem;height:1.6rem;width:1.6rem}.avatar.avatar-sm{font-size:1rem;height:2.4rem;width:2.4rem}.avatar.avatar-lg{font-size:2rem;height:4.8rem;width:4.8rem}.avatar.avatar-xl{font-size:2.6rem;height:6.4rem;width:6.4rem}.avatar img{height:100%;width:100%;z-index:99}.avatar .avatar-icon{background:#fff;bottom:-.2em;height:50%;padding:5%;position:absolute;right:-.2em;width:50%}.avatar[data-initial]::after{color:#fff;content:attr(data-initial);left:50%;position:absolute;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:0}.chip{-webkit-align-content:space-around;align-content:space-around;-webkit-align-items:center;align-items:center;border:.1rem solid transparent;border-radius:.3rem;display:flex;display:-ms-flexbox;display:-webkit-flex;-ms-flex-align:center;-ms-flex-line-pack:distribute;list-style:none;margin:0;padding:.5rem 0}.chip .chip-icon{-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.chip .chip-content{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;padding:0 1rem}.chip .chip-action{-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}.chip .chip-title{font-size:1.4rem}.chip .chip-meta{color:#b3b3b3;font-size:1.2rem}.chip-sm{-webkit-align-items:center;align-items:center;background:#eff1fa;border-radius:.3rem;color:#666;display:-ms-inline-flexbox;display:inline-flex;display:-webkit-inline-flex;-ms-flex-align:center;font-size:1.2rem;height:2.4rem;max-width:100%;padding:.3rem .6rem}.chip-sm:focus,.chip-sm:hover{background:#e8eaf7}.chip-sm .btn-clear{margin-top:-.2rem}.chip-sm .btn-clear::before{color:#3b49af;font-size:1.6rem}.chip-sm.selected{background:#5764c6;color:#fff}.chip-sm.selected .btn-clear::before{color:#eff1fa}.chip-sm .chip-name{margin-left:.4rem}.chip-sm .avatar{font-size:.8rem;height:1.6rem;width:1.6rem}.form-autocomplete{position:relative}.form-autocomplete .form-autocomplete-input{background:#fff;border:.1rem solid #c5c5c5;border-radius:.3rem;color:#333;display:block;font-size:1.4rem;line-height:1.6rem;max-width:100%;min-height:3.2rem;outline:0;padding:.3rem .3rem 0;width:100%}.form-autocomplete .form-autocomplete-input .chip-sm{margin-bottom:.3rem}.form-autocomplete .form-autocomplete-input .form-input{background:#fff;border-color:transparent;display:inline-block;height:2.4rem;margin-bottom:.3rem;padding:.3rem;vertical-align:top;width:auto}.form-autocomplete .form-autocomplete-list{background:#fff;border:.1rem solid #d2d2d2;border-radius:.3rem;box-shadow:0 .1rem .2rem rgba(0,0,0,.15);display:block;height:auto;left:0;margin:.3rem 0 0;padding:.5rem;position:absolute;top:100%;width:100%;z-index:1988}.menu,.modal-container,.shadow{box-shadow:0 .1rem .4rem rgba(0,0,0,.3)}.form-autocomplete .form-autocomplete-item{border-radius:.3rem;display:block;margin-top:.1rem;padding:.2rem 1rem}.form-autocomplete .form-autocomplete-item:focus,.form-autocomplete .form-autocomplete-item:hover{background:#fff}.form-autocomplete .form-autocomplete-item.active{background:#eff1fa}.tooltip{position:relative}.tooltip::after{background:rgba(51,51,51,.9);border-radius:.3rem;bottom:100%;color:#fff;content:attr(data-tooltip);display:block;font-size:1.2rem;left:50%;line-height:1.6rem;max-width:32rem;opacity:0;padding:.6rem 1rem;pointer-events:none;position:absolute;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);transition:all .216s ease;z-index:99}.tooltip:focus::after,.tooltip:hover::after{opacity:1;-webkit-transform:translate(-50%,-.5rem);-ms-transform:translate(-50%,-.5rem);transform:translate(-50%,-.5rem)}.toast.toast-danger a:active,.toast.toast-danger a:focus,.toast.toast-danger a:hover,.toast.toast-primary a:active,.toast.toast-primary a:focus,.toast.toast-primary a:hover,.toast.toast-success a:active,.toast.toast-success a:focus,.toast.toast-success a:hover{opacity:.75}.tooltip.disabled,.tooltip[disabled]{pointer-events:auto}.tooltip.tooltip-right::after{bottom:50%;left:100%;-webkit-transform:translate(0,50%);-ms-transform:translate(0,50%);transform:translate(0,50%)}.tooltip.tooltip-right:focus::after,.tooltip.tooltip-right:hover::after{-webkit-transform:translate(.5rem,50%);-ms-transform:translate(.5rem,50%);transform:translate(.5rem,50%)}.tooltip.tooltip-bottom::after{bottom:auto;top:100%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0)}.tooltip.tooltip-bottom:focus::after,.tooltip.tooltip-bottom:hover::after{-webkit-transform:translate(-50%,.5rem);-ms-transform:translate(-50%,.5rem);transform:translate(-50%,.5rem)}.tooltip.tooltip-left::after{bottom:50%;left:auto;right:100%;-webkit-transform:translate(0,50%);-ms-transform:translate(0,50%);transform:translate(0,50%)}.tooltip.tooltip-left:focus::after,.tooltip.tooltip-left:hover::after{-webkit-transform:translate(-.5rem,50%);-ms-transform:translate(-.5rem,50%);transform:translate(-.5rem,50%)}.badge{position:relative}.badge[data-badge]::after{background:#5764c6;background-clip:padding-box;border:.1rem solid #fff;border-radius:1rem;color:#fff;content:attr(data-badge);display:inline-block;font-size:1.1rem;height:1.8rem;line-height:1.2rem;min-width:1.8rem;padding:.2rem .5rem;text-align:center;-webkit-transform:translate(-.2rem,-.8rem);-ms-transform:translate(-.2rem,-.8rem);transform:translate(-.2rem,-.8rem);white-space:nowrap}.menu,.toast{display:block}.toast{background:#efefef;border:.1rem solid #eaeaea;border-radius:.3rem;color:#666;padding:1.4rem;width:100%}.menu,.menu .menu-item,.menu .menu-item a,.modal-container{border-radius:.3rem}.toast.toast-danger,.toast.toast-danger .btn-clear,.toast.toast-danger a,.toast.toast-primary .btn-clear,.toast.toast-primary a,.toast.toast-success,.toast.toast-success .btn-clear,.toast.toast-success a{color:#fff}.toast.toast-primary{background:#5764c6;border-color:#4f5dc3;color:#fff}.toast.toast-success{background:#32b643;border-color:#30ae40}.toast.toast-danger{background:#e85600;border-color:#de5200}.menu{background:#fff;margin:0;padding:.5rem;text-align:left;z-index:999}.menu .menu-header,.menu .menu-item,.menu .menu-item a{display:block;padding:.2rem 1rem}.menu .menu-item{color:#333;line-height:2.4rem;margin-top:.1rem;-moz-user-select:none;-ms-user-select:none;user-select:none}.menu .menu-item a{color:inherit;margin:-.2rem -1rem}.menu .menu-item a:focus,.menu .menu-item a:hover{color:#5764c6}.menu .menu-item a.active,.menu .menu-item a:active{background:#eff1fa;color:#4452c0}.menu .menu-header{color:#ccc;font-size:1.2rem;line-height:1.8rem;margin-top:0}.menu .menu-header .menu-header-text{background:#fff;display:inline-block;margin-left:-.6rem;padding:0 .6rem;position:relative;z-index:99}.menu .menu-header::after{border-bottom:.1rem solid #efefef;content:&quot;&quot;;display:block;height:.1rem;-webkit-transform:translateY(-1rem);-ms-transform:translateY(-1rem);transform:translateY(-1rem);width:100%}.breadcrumb,.pagination,.tab{list-style:none;margin:.5rem 0}.breadcrumb{padding:1.2rem}.breadcrumb .breadcrumb-item{display:inline-block;margin:0}.breadcrumb .breadcrumb-item:last-child,.breadcrumb .breadcrumb-item:last-child a{color:#666;pointer-events:none}.breadcrumb .breadcrumb-item:not(:last-child)::after{color:#c5c5c5;content:&quot;/&quot;;padding:0 .4rem}.tab{display:flex;display:-ms-flexbox;display:-webkit-flex;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;max-width:100%;overflow-x:auto}.tab .tab-item{border-bottom:.1rem solid #c5c5c5;margin-top:0}.tab .tab-item a{border-bottom:.2rem solid transparent;color:#333;display:block;margin-bottom:-.1rem;margin-top:0;padding:.8rem 1.4rem}.pagination,.pagination .page-item,.pagination .page-item a{display:inline-block}.tab .tab-item a:focus,.tab .tab-item a:hover{color:#5764c6}.tab .tab-item a.active,.tab .tab-item.active a{border-bottom-color:#3b49af;color:#3b49af}.tab .tab-item .badge[data-badge]::after{position:absolute;right:-1.4rem;top:1rem;-webkit-transform:translate(-50%,-1rem);-ms-transform:translate(-50%,-1rem);transform:translate(-50%,-1rem)}.tab.tab-block .tab-item{-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;text-align:center}.pagination{padding:1.2rem}.pagination .page-item span{display:inline-block;padding:.6rem .5rem}.pagination .page-item a{border-radius:.3rem;margin:0 .1rem;padding:.6rem 1.2rem;text-decoration:none}.pagination .page-item a:focus,.pagination .page-item a:hover{background:#eff1fa}.pagination .page-item.active a{background:#5764c6;color:#fff}.modal{-webkit-align-items:center;align-items:center;bottom:0;display:none;-ms-flex-align:center;-ms-flex-pack:center;-ms-grid-row-align:center;-webkit-justify-content:center;justify-content:center;left:0;opacity:0;overflow:hidden;position:fixed;right:0;top:0}.modal.active{display:flex;display:-ms-flexbox;display:-webkit-flex;opacity:1;z-index:1988}.modal.active .modal-overlay{background:rgba(0,0,0,.75);bottom:0;display:block;left:0;position:absolute;right:0;top:0}.card,.modal-container{background:#fff;display:block}.modal.active .modal-container{-webkit-animation:slide-down .216s;animation:slide-down .216s}.modal-container{-webkit-animation:slide-up .216s;animation:slide-up .216s;margin:0 auto;padding:0;text-align:left;z-index:1988}.modal-container .modal-header{padding:1.5rem}.modal-container .modal-header .modal-title{font-size:1.5rem;margin:0}.modal-container .modal-body{max-height:50vh;overflow-y:auto;padding:1.5rem;position:relative}.text-clip,.text-ellipsis{overflow:hidden;white-space:nowrap}.modal-container .modal-footer{padding:1.5rem;text-align:right}.card,.text-left{text-align:left}@media screen and (min-width:640px){.modal-container{width:64rem}}@media screen and (min-width:320px){.modal-sm .modal-container{width:32rem}}.card{border:.1rem solid #efefef;border-radius:.3rem;margin:0;padding:0;z-index:999}.card .card-body,.card .card-footer,.card .card-header{padding:1.5rem 1.5rem 0}.card .card-body:last-child,.card .card-footer:last-child,.card .card-header:last-child{padding-bottom:1.5rem}.card .card-image{padding-top:1.5rem}.card .card-image:first-child{padding-top:0}.card .card-image:first-child img{border-top-left-radius:.3rem;border-top-right-radius:.3rem}.card .card-image:last-child img{border-bottom-left-radius:.3rem;border-bottom-right-radius:.3rem}.card .card-title{font-size:1.4em;line-height:1;margin-bottom:.5rem;margin-top:0}.card .card-meta{color:#b3b3b3;font-size:1em;margin-bottom:0;margin-top:0}@-webkit-keyframes loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes slide-down{0%{margin-top:-3rem;opacity:0}100%{margin-top:0;opacity:1}}@keyframes slide-down{0%{margin-top:-3rem;opacity:0}100%{margin-top:0;opacity:1}}.clearfix::after,.container::after{clear:both;content:&quot;&quot;;display:table}.block,.centered{display:block}.float-left{float:left!important}.float-right{float:right!important}.rel{position:relative}.abs{position:absolute}.fixed{position:fixed}.centered{float:none;margin-left:auto;margin-right:auto}.mt-10{margin-top:1rem}.mr-10{margin-right:1rem}.mb-10{margin-bottom:1rem}.ml-10{margin-left:1rem}.mt-5{margin-top:.5rem}.mr-5{margin-right:.5rem}.mb-5{margin-bottom:.5rem}.ml-5{margin-left:.5rem}.pt-10{padding-top:1rem}.pr-10{padding-right:1rem}.pb-10{padding-bottom:1rem}.pl-10{padding-left:1rem}.pt-5{padding-top:.5rem}.pr-5{padding-right:.5rem}.pb-5{padding-bottom:.5rem}.pl-5{padding-left:.5rem}.inline{display:inline}.inline-block{display:inline-block}.flex{display:flex;display:-ms-flexbox;display:-webkit-flex}.inline-flex{display:inline-flex;display:-ms-inline-flexbox;display:-webkit-inline-flex}.hide{display:none!important}.visible{visibility:visible}.invisible{visibility:hidden}.text-hide{background:0 0;border:0;color:transparent;font:0/0 a;text-shadow:none}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.text-lowercase{text-transform:lowercase}.text-uppercase{text-transform:uppercase}.text-capitalize{text-transform:capitalize}.text-normal{font-weight:400}.text-bold{font-weight:700}.text-italic{font-style:italic}.text-ellipsis{text-overflow:ellipsis}.text-clip{text-overflow:clip}.text-break{-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;word-break:break-word;word-wrap:break-word}.light-shadow{box-shadow:0 .1rem .2rem rgba(0,0,0,.15)}.rounded{border-radius:.3rem}.circle{border-radius:50%}.divider{border-bottom:.1rem solid #efefef;display:block;margin:.5rem}.loading{color:transparent!important;min-height:1.6rem;pointer-events:none;position:relative}.loading::after{-webkit-animation:loading .5s infinite linear;animation:loading .5s infinite linear;border:.2rem solid #5764c6;border-radius:.8rem;border-right-color:transparent;border-top-color:transparent;content:&quot;&quot;;display:block;height:1.6rem;left:50%;margin-left:-.8rem;margin-top:-.8rem;position:absolute;top:50%;width:1.6rem}</td>
+      </tr>
+</table>
+
+  </div>
+
+</div>
+
+<button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+<div id="jump-to-line" style="display:none">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+    <button type="submit" class="btn">Go</button>
+</form></div>
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links float-right">
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact GitHub</a></li>
+      <li><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+
+    </ul>
+
+    <a href="https://github.com" aria-label="Homepage" class="site-footer-mark" title="GitHub">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>&copy; 2016 <span title="0.04187s from github-fe-c5e6852.cp1-iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a href="https://help.github.com" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+      </button>
+      You can't perform that action at this time.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" integrity="sha256-LkSqcbUyVnVb/pNN00YzECBYVDe2mFf3k8aPbA39LP4=" src="https://assets-cdn.github.com/assets/frameworks-2e44aa71b53256755bfe934dd346331020585437b69857f793c68f6c0dfd2cfe.js"></script>
+      <script async="async" crossorigin="anonymous" integrity="sha256-8OipRQnXQsCOpDT1ySuGzwu6D6slsZtBu8UL36KDZVQ=" src="https://assets-cdn.github.com/assets/github-f0e8a94509d742c08ea434f5c92b86cf0bba0fab25b19b41bbc50bdfa2836554.js"></script>
+      
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  </body>
+</html>
+
