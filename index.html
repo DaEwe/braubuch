@@ -104,28 +104,32 @@
                             <button class="btn btn-sm"><i class="fa fa-forward" aria-hidden="true"></i>
                             </button>
                         </div>
+                    </td>
                 </tbody>
             </table>
             <h5>Eintrag</h5>
-            <textarea class="form-input"></textarea>
+            <textarea id="log-entry" class="form-input"></textarea>
             <button class="btn btn-primary btn-block">Ok</button>
         </div>
     </section>
     <section class="content" id="recipe-form-display">
         <div class="columns">
             <div class="column col-12">
-                <h3> Rezept für <input type="text" class="form-input inline" placeholder="Name"></h3>
-                Maßangaben für <input class="form-input slim inline" type="number" name="litre" min="1" max="1000" value="10"> Liter Ausbeute
+                <h3> Rezept für <input type="text" class="form-input inline" id="recipe-name" placeholder="Name"></h3>
+                Maßangaben für <input class="form-input slim inline" type="number" name="litre" min="1" max="1000" value="10" title="litre-amount"> Liter Ausbeute
                 <h5>Malz</h5>
-
+                <div class="ingredient-list" id="malt-list"></div>
                 <h5>Hopfen</h5>
+                <div class="ingredient-list" id="hop-list"></div>
                 <h5>Hefe</h5>
+                <div class="ingredient-list" id="yeast-list"></div>
                 <h3>Anmerkungen</h3>
-                <textarea class="form-input" id="input-example-3" placeholder="Anmerkungen" rows="3"></textarea>
+                <textarea class="form-input" id="recipe-remark" placeholder="Anmerkungen" rows="3"></textarea>
                 <h3>Durchführung</h3>
-                <div id="steps"></div>
-                <button class="btn btn-block">Speichern</button>
+                <div id="step-list"></div>
+                <button class="btn btn-block" id="save-recipe">Speichern</button>
             </div>
+        </div>
     </section>
 </div>
 
@@ -133,13 +137,13 @@
 <script id="ingredient-template" type="x-tmpl-mustache">
     <div class="columns">
         <div class="column col-8">
-            <input type="text" class="form-input" name="ingr-{{num}}" placeholder="Zutat">
+            <input type="text" class="form-input ingredient" name="ingr-{{num}}" placeholder="Zutat">
         </div>
         <div class="column col-2">
-            <input type="number" class="form-input" name="ingr-{{num}}-amount" min="0" step="0.1" placeholder="Menge">
+            <input type="number" class="form-input amount" name="ingr-{{num}}-amount" min="0" step="0.1" placeholder="Menge">
         </div>
         <div class="column col-2">
-            <select class="form-select" name="ingr-unit-{{num}}">
+            <select class="form-select unit" name="ingr-unit-{{num}}">
                 <option value="kg">Kg</option>
                 <option value="l">Liter</option>
                 <option value="stk">Stk</option>
@@ -150,15 +154,15 @@
 
 <script id="step-template" type="x-tmpl-mustache">
     <div class="columns">
-        <div class="column col-1">{{num}}.</div>
+        <div class="column col-1"><div class="row-num"></div></div>
         <div class="column col-6">
-            <input type="text" class="form-input" name="step-{{num}}" placeholder="Vorgang">
+            <input type="text" class="form-input description" name="description-{{num}}" placeholder="Vorgang">
         </div>
         <div class="column col-2">
-            <input type="number" class="form-input" name="step-{{num}}-temp" min="0" step="1" placeholder="Temperatur">
+            <input type="number" class="form-input temperature" name="step-{{num}}-temp" min="0" step="1" placeholder="Temperatur">
         </div>
         <div class="column col-2">
-            <input type="number" class="form-input" name="step-{{num}}-duration" min="0" step="1" placeholder="Dauer">
+            <input type="number" class="form-input duration" name="step-{{num}}-duration" min="0" step="1" placeholder="Dauer">
         </div>
         <div class="column col-1">
             <button class="btn add-step"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
