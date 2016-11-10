@@ -90,32 +90,80 @@
                 <h3>Anmerkungen</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="column col-6">
-                <h3>Log</h3>
-                <table class="table">
-                    <tbody>
-                    <tr><td>something happened</td></tr>
-                    <tr><td>something happened</td></tr>
-                    <tr><td>something happened</td></tr>
-                    <tr><td>2016-10-24T23:59:12</td><td>something happened</td><td>70°C</td><td>5mins</td>
-                        <td>
-                            <div class="btn-group">
-                                <button class="btn btn-sm"><i class="fa fa-pause" aria-hidden="true"></i>
-                                </button>
-                                <button class="btn btn-sm"><i class="fa fa-forward" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                    </tbody>
-                </table>
-                <h5>Eintrag</h5>
-                    <textarea class="form-input"></textarea>
-                    <button class="btn btn-primary btn-block">Ok</button>
-
-
-            </div>
+            <h3>Log</h3>
+            <table class="table">
+                <tbody>
+                <tr><td>something happened</td></tr>
+                <tr><td>something happened</td></tr>
+                <tr><td>something happened</td></tr>
+                <tr><td>2016-10-24T23:59:12</td><td>something happened</td><td>70°C</td><td>5mins</td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-sm"><i class="fa fa-pause" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn btn-sm"><i class="fa fa-forward" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                </tbody>
+            </table>
+            <h5>Eintrag</h5>
+            <textarea class="form-input"></textarea>
+            <button class="btn btn-primary btn-block">Ok</button>
         </div>
     </section>
+    <section class="content" id="recipe-form-display">
+        <div class="columns">
+            <div class="column col-12">
+                <h3> Rezept für <input type="text" class="form-input inline" placeholder="Name"></h3>
+                Maßangaben für <input class="form-input slim inline" type="number" name="litre" min="1" max="1000" value="10"> Liter Ausbeute
+                <h5>Malz</h5>
+
+                <h5>Hopfen</h5>
+                <h5>Hefe</h5>
+                <h3>Anmerkungen</h3>
+                <textarea class="form-input" id="input-example-3" placeholder="Anmerkungen" rows="3"></textarea>
+                <h3>Durchführung</h3>
+                <div id="steps"></div>
+                <button class="btn btn-block">Speichern</button>
+            </div>
+    </section>
 </div>
+
+<!-- Mustache Templates -->
+<script id="ingredient-template" type="x-tmpl-mustache">
+    <div class="columns">
+        <div class="column col-8">
+            <input type="text" class="form-input" name="ingr-{{num}}" placeholder="Zutat">
+        </div>
+        <div class="column col-2">
+            <input type="number" class="form-input" name="ingr-{{num}}-amount" min="0" step="0.1" placeholder="Menge">
+        </div>
+        <div class="column col-2">
+            <select class="form-select" name="ingr-unit-{{num}}">
+                <option value="kg">Kg</option>
+                <option value="l">Liter</option>
+                <option value="stk">Stk</option>
+            </select>
+            <button class="btn add-ingredient"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+    </div>
+</script>
+
+<script id="step-template" type="x-tmpl-mustache">
+    <div class="columns">
+        <div class="column col-1">{{num}}.</div>
+        <div class="column col-6">
+            <input type="text" class="form-input" name="step-{{num}}" placeholder="Vorgang">
+        </div>
+        <div class="column col-2">
+            <input type="number" class="form-input" name="step-{{num}}-temp" min="0" step="1" placeholder="Temperatur">
+        </div>
+        <div class="column col-2">
+            <input type="number" class="form-input" name="step-{{num}}-duration" min="0" step="1" placeholder="Dauer">
+        </div>
+        <div class="column col-1">
+            <button class="btn add-step"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+    </div>
+</script>
 
 <script src="js/lib/firebase-3.6.0.js"></script>
 <script>
@@ -130,6 +178,7 @@
     firebase.initializeApp(config);
 </script>
 <script src="js/lib/jquery-3.1.1.min.js"></script>
+<script src="js/lib/mustache.min.js"></script>
 <script src="js/braubuch.js"></script>
 </body>
 </html>

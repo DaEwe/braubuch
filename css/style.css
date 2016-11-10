@@ -6,3 +6,7 @@
 .table.slim {
     width: 60%;
 }
+
+.form-input.slim {
+    width: 6rem;
+}
