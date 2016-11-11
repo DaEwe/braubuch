@@ -7,6 +7,9 @@ var step_template = $("#step-template").html();
 var num_ingredients=1;
 var num_steps=1;
 
+var database = firebase.database();
+var provider = new firebase.auth.GoogleAuthProvider();
+
 
 function get_steps(){
     return $.map($("#step-list").children(), function(obj,idx){
@@ -39,12 +42,21 @@ function get_ingredients() {
 $(document).ready(function(){
     Mustache.parse(ingredient_template);
     Mustache.parse(step_template);
+    
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user){
+            $("#save-recipe").removeClass("disabled");
+        } else {
+            $("#save-recipe").addClass("disabled");
+        }
+        
+    });
 
     $(".content").hide();
     $("#recipe-form-display").show();
     $(".ingredient-list").append(Mustache.render(ingredient_template,{num: num_ingredients++}));
     $("#step-list").append(Mustache.render(step_template,{num: num_steps++}));
-
+    $(".row-num").html("1.");
 
     $("#menu a").click(function(event){
         $(".content").hide();
@@ -63,13 +75,17 @@ $(document).ready(function(){
     });
     
     $("#save-recipe").click(function () {
+
         var recipe = {
             name: $("#recipe-name").val(),
             ingredients: get_ingredients(),
             remark: $("#recipe-remark").val(),
-            steps: get_steps()
-        }
+            steps: get_steps(),
+            author: firebase.auth().currentUser.displayName
+        };
+        database.ref("recipes").push(recipe);
         console.log(recipe);
+
     });
 
 });

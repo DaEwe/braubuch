@@ -90,26 +90,28 @@
                 <h3>Anmerkungen</h3>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
-            <h3>Log</h3>
-            <table class="table">
-                <tbody>
-                <tr><td>something happened</td></tr>
-                <tr><td>something happened</td></tr>
-                <tr><td>something happened</td></tr>
-                <tr><td>2016-10-24T23:59:12</td><td>something happened</td><td>70°C</td><td>5mins</td>
-                    <td>
-                        <div class="btn-group">
-                            <button class="btn btn-sm"><i class="fa fa-pause" aria-hidden="true"></i>
-                            </button>
-                            <button class="btn btn-sm"><i class="fa fa-forward" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </td>
-                </tbody>
-            </table>
-            <h5>Eintrag</h5>
-            <textarea id="log-entry" class="form-input"></textarea>
-            <button class="btn btn-primary btn-block">Ok</button>
+            <div class="column col-6">
+                <h3>Log</h3>
+                <table class="table">
+                    <tbody>
+                    <tr><td>something happened</td></tr>
+                    <tr><td>something happened</td></tr>
+                    <tr><td>something happened</td></tr>
+                    <tr><td>2016-10-24T23:59:12</td><td>something happened</td><td>70°C</td><td>5mins</td>
+                        <td>
+                            <div class="btn-group">
+                                <button class="btn btn-sm"><i class="fa fa-pause" aria-hidden="true"></i>
+                                </button>
+                                <button class="btn btn-sm"><i class="fa fa-forward" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tbody>
+                </table>
+                <h5>Eintrag</h5>
+                <textarea id="log-entry" class="form-input"></textarea>
+                <button class="btn btn-primary btn-block">Ok</button>
+            </div>
         </div>
     </section>
     <section class="content" id="recipe-form-display">
@@ -159,10 +161,16 @@
             <input type="text" class="form-input description" name="description-{{num}}" placeholder="Vorgang">
         </div>
         <div class="column col-2">
-            <input type="number" class="form-input temperature" name="step-{{num}}-temp" min="0" step="1" placeholder="Temperatur">
+            <div class="input-group">
+                <input type="number" class="form-input temperature" name="step-{{num}}-temp" min="0" step="1" placeholder="Temperatur">
+                <span class="input-group-addon">°C</span>
+            </div>
         </div>
         <div class="column col-2">
-            <input type="number" class="form-input duration" name="step-{{num}}-duration" min="0" step="1" placeholder="Dauer">
+            <div class="input-group">
+                <input type="number" class="form-input duration" name="step-{{num}}-duration" min="0" step="1" placeholder="Dauer">
+                <span class="input-group-addon">min</span>
+            </div>
         </div>
         <div class="column col-1">
             <button class="btn add-step"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
